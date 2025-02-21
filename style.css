@@ -1,0 +1,59 @@
+
+/* 으해해해해해해해 */ 
+            body {
+                display: grid;
+                place-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: cyan;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                /* 중앙 정렬해줌s */ 
+            }
+            
+            h1 {
+                margin: 0;
+                font-size: 70pt;
+            }
+            h3 {
+                font-size: 30pt;
+            }
+            h4 {
+                font-size: 25pt;
+            }
+            
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 25px;
+                /* 이것도 뒤에 p 랑 h 중앙 정렬해줌 */
+            }
+            #nice {
+                color: blue;
+                font-size: 15pt;
+                background-color: bisque;
+            }
+            .good {
+                color: blueviolet;
+                background-color: blue;
+                font-size: 15pt;
+            }
+
+            .moving {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+            }
+
+            .moving img {
+                width: 900px; /* 이미지 크기 조절 */
+                animation: moveplz 3s infinite alternate ease-in-out; /* 애니메이션 적용 */
+            }
+
+            @keyframes moveplz {
+                0% { transform: translateX(0); } /* 원래 위치 */
+            100% { transform: translateX(100px); } /* 오른쪽으로 100px 이동 */
+        }
+
+    
+            
